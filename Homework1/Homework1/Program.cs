@@ -11,7 +11,13 @@ namespace Homework1
     static void Main(string[] args)
     {
       string[] items = { "Read data from a file", "Calculate the root of a number", "Get a page Yandex.ru", "Exit" };
-      method[] methods = new method[] { FileReader.ReadFile, RootCalculator.CalculateRoot, HTMLImporter.ImportHTML, ConsoleMenu.Exit };
+      method[] methods = new method[]
+      {
+        FileReader.ReadFile,
+        RootCalculator.CalculateRoot,
+        HTMLImporter.ImportHTML,
+        ConsoleMenu.Exit
+      };
       ConsoleMenu menu = new ConsoleMenu(items);
       int menuResult;
       do
